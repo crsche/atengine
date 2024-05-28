@@ -5,5 +5,7 @@ edition = "2021"
 
 [dependencies]
 crossterm = { version = "0.27.0", default-features = false }
-image = "0.25.1"
+fast_image_resize = { version = "4.0.0", features = ["image"] }
+image = { version = "0.25.1", features = ["nasm"] }
+rayon = "1.10.0"
 thiserror = "1.0.61"
